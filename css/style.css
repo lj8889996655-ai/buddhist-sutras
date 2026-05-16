@@ -1,0 +1,644 @@
+/* ==================== 基础样式 ==================== */
+:root {
+    --primary-color: #8B4513;
+    --primary-light: #D2691E;
+    --primary-dark: #5D3A1A;
+    --gold-color: #DAA520;
+    --bg-color: #FFFAF0;
+    --bg-light: #FFF8DC;
+    --text-color: #333;
+    --text-light: #666;
+    --border-color: #DEB887;
+    --shadow: 0 2px 10px rgba(0,0,0,0.1);
+    --shadow-hover: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Serif SC', 'SimSun', 'STSong', serif;
+    background: linear-gradient(135deg, var(--bg-color) 0%, var(--bg-light) 100%);
+    color: var(--text-color);
+    line-height: 1.8;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ==================== 头部导航 ==================== */
+.header {
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-color) 100%);
+    color: white;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: var(--shadow);
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.lotus {
+    font-size: 2rem;
+    color: var(--gold-color);
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.nav {
+    display: flex;
+    gap: 30px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 5px 15px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.nav a:hover,
+.nav a.active {
+    background: rgba(255,255,255,0.2);
+}
+
+/* ==================== 英雄区 ==================== */
+.hero {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y="50" font-size="80" opacity="0.05">卍</text></svg>');
+    background-size: 100px;
+    opacity: 0.3;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+
+.subtitle {
+    font-size: 1.3rem;
+    opacity: 0.9;
+    margin-bottom: 40px;
+}
+
+.search-box {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    gap: 10px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    background: rgba(255,255,255,0.95);
+    outline: none;
+}
+
+.search-box button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    background: var(--gold-color);
+    color: var(--primary-dark);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.search-box button:hover {
+    background: #FFD700;
+    transform: translateY(-2px);
+}
+
+/* ==================== 佛经目录 ==================== */
+.sutras-section {
+    padding: 60px 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: var(--gold-color);
+    margin: 15px auto 0;
+    border-radius: 2px;
+}
+
+.sutra-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.sutra-category {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border-color);
+}
+
+.sutra-category h4 {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--gold-color);
+}
+
+.sutra-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.sutra-card {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    background: var(--bg-light);
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--text-color);
+    transition: all 0.3s ease;
+    border-left: 4px solid var(--gold-color);
+}
+
+.sutra-card:hover {
+    transform: translateX(5px);
+    box-shadow: var(--shadow-hover);
+    background: white;
+}
+
+.sutra-name {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+
+.sutra-desc {
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+/* ==================== 特色功能 ==================== */
+.features {
+    padding: 60px 0;
+    background: white;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.feature-item {
+    text-align: center;
+    padding: 30px;
+    border-radius: 15px;
+    background: var(--bg-light);
+    transition: all 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+}
+
+.feature-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.feature-item h4 {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+}
+
+/* ==================== 关于 ==================== */
+.about {
+    padding: 60px 0;
+    background: linear-gradient(135deg, var(--bg-light) 0%, var(--bg-color) 100%);
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-content p {
+    margin-bottom: 15px;
+    font-size: 1.05rem;
+}
+
+.notice {
+    color: var(--text-light);
+    font-size: 0.9rem !important;
+    padding: 15px;
+    background: rgba(139, 69, 19, 0.05);
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.merit {
+    margin-top: 30px;
+    padding: 25px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    border: 2px solid var(--gold-color);
+}
+
+.merit p {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin: 8px 0;
+    font-size: 1.1rem;
+}
+
+/* ==================== 页脚 ==================== */
+.footer {
+    background: var(--primary-dark);
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+.footer .small {
+    font-size: 0.85rem;
+    opacity: 0.7;
+}
+
+/* ==================== 经文页面样式 ==================== */
+.sutra-page {
+    padding: 40px 0;
+}
+
+.sutra-header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.sutra-header h1 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.sutra-header .subtitle {
+    color: var(--text-light);
+    font-size: 1rem;
+}
+
+.sutra-content {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    line-height: 2.2;
+}
+
+.sutra-content h2 {
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    margin: 30px 0 20px;
+    padding-left: 15px;
+    border-left: 4px solid var(--gold-color);
+}
+
+.sutra-content h3 {
+    color: var(--primary-light);
+    font-size: 1.2rem;
+    margin: 25px 0 15px;
+}
+
+.sutra-content p {
+    margin-bottom: 15px;
+    text-indent: 2em;
+    text-align: justify;
+}
+
+.sutra-content .highlight {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.sutra-content .mantra {
+    background: var(--bg-light);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    text-align: center;
+    border: 1px solid var(--border-color);
+}
+
+.sutra-content .mantra p {
+    text-indent: 0;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.sutra-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 1px solid var(--border-color);
+}
+
+.sutra-nav a {
+    color: var(--primary-color);
+    text-decoration: none;
+    padding: 10px 20px;
+    background: var(--bg-light);
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.sutra-nav a:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+/* ==================== 响应式设计 ==================== */
+@media (max-width: 768px) {
+    .header .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav {
+        gap: 15px;
+    }
+
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    .search-box {
+        flex-direction: column;
+    }
+
+    .sutra-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sutra-content {
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    .sutra-content h2 {
+        font-size: 1.1rem;
+    }
+
+    .sutra-content h3 {
+        font-size: 1rem;
+    }
+
+    .sutra-header h1 {
+        font-size: 1.4rem;
+    }
+
+    .sutra-content .mantra {
+        padding: 12px;
+    }
+
+    .sutra-nav {
+        flex-direction: column;
+        gap: 10px;
+        align-items: stretch;
+    }
+
+    .sutra-nav a {
+        text-align: center;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ==================== 超小屏幕适配 ==================== */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .header {
+        padding: 10px 0;
+    }
+
+    .logo h1 {
+        font-size: 1.2rem;
+    }
+
+    .nav {
+        gap: 8px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav a {
+        font-size: 0.85rem;
+        padding: 4px 10px;
+    }
+
+    .hero {
+        padding: 40px 0;
+    }
+
+    .hero h2 {
+        font-size: 1.3rem;
+        letter-spacing: 2px;
+    }
+
+    .subtitle {
+        font-size: 0.9rem;
+    }
+
+    .sutra-page {
+        padding: 20px 0;
+    }
+
+    .sutra-content {
+        padding: 12px;
+        font-size: 15px;
+        border-radius: 10px;
+        line-height: 2;
+    }
+
+    .sutra-content h2 {
+        font-size: 1rem;
+        margin: 20px 0 15px;
+        padding-left: 10px;
+    }
+
+    .sutra-content h3 {
+        font-size: 0.95rem;
+        margin: 18px 0 12px;
+    }
+
+    .sutra-content p {
+        margin-bottom: 12px;
+        text-indent: 2em;
+    }
+
+    .sutra-header h1 {
+        font-size: 1.2rem;
+    }
+
+    .sutra-header .subtitle {
+        font-size: 0.9rem;
+    }
+
+    .sutra-content .mantra {
+        padding: 10px;
+        margin: 15px 0;
+    }
+
+    .sutra-content .mantra p {
+        font-size: 0.95rem;
+    }
+
+    .sutra-nav {
+        margin-top: 30px;
+        padding-top: 20px;
+    }
+
+    .sutra-nav a {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+
+    .section-title {
+        font-size: 1.4rem;
+    }
+
+    .sutra-category {
+        padding: 15px;
+    }
+
+    .sutra-card {
+        padding: 12px;
+    }
+
+    .sutra-name {
+        font-size: 1rem;
+    }
+
+    .sutra-desc {
+        font-size: 0.85rem;
+    }
+
+    .feature-item {
+        padding: 20px;
+    }
+
+    .feature-icon {
+        font-size: 2rem;
+    }
+
+    .merit {
+        padding: 15px;
+    }
+
+    .merit p {
+        font-size: 1rem;
+    }
+}
+
+/* ==================== 打印样式 ==================== */
+@media print {
+    .header,
+    .hero,
+    .footer,
+    .sutra-nav {
+        display: none;
+    }
+
+    .sutra-content {
+        box-shadow: none;
+        padding: 0;
+    }
+}

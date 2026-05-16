@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>佛经宝库 - 在线阅读佛教经典全文 | 心经 金刚经 地藏经 法华经 华严经</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="佛经宝库提供心经、金刚经、阿弥陀经、无量寿经、地藏经、法华经、华严经、梵网经等佛教经典全文在线阅读，支持目录导航、全文搜索，手机电脑均可阅读。">
+    <meta name="keywords" content="佛经,佛教经典,心经,金刚经,阿弥陀经,无量寿经,地藏经,法华经,华严经,梵网经,在线阅读,佛经全文">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="佛经宝库 - 在线阅读佛教经典全文 | 心经 金刚经 地藏经 法华经 华严经">
+    <meta property="og:description" content="佛经宝库提供心经、金刚经、阿弥陀经、无量寿经、地藏经、法华经、华严经、梵网经等佛教经典全文在线阅读，支持目录导航、全文搜索，手机电脑均可阅读。">
+    <meta property="og:url" content="https://buddhist-sutras.pages.dev/home.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="佛经宝库">
+    <!-- JSON-LD 结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "佛经宝库",
+      "url": "https://buddhist-sutras.pages.dev",
+      "description": "佛经宝库提供多部重要佛教经典全文在线阅读服务",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://buddhist-sutras.pages.dev/home.html?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+</head>
+<body>
+    <!-- 顶部导航 -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <span class="lotus">&#10048;</span>
+                <h1>佛经宝库</h1>
+            </div>
+            <nav class="nav">
+                <a href="home.html">首页</a>
+                <a href="#sutras">经典目录</a>
+                <a href="videos.html">佛学视频</a>
+                <a href="#about">关于</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 英雄区 -->
+    <section class="hero">
+        <div class="container">
+            <h2>南无本师释迦牟尼佛</h2>
+            <p class="subtitle">弘扬正法，利益众生</p>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="搜索佛经...">
+                <button onclick="searchSutras()">搜索</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 佛经目录 -->
+    <section class="sutras-section" id="sutras">
+        <div class="container">
+            <h3 class="section-title">📿 经典目录</h3>
+            
+            <div class="sutra-grid">
+                <!-- 般若部 -->
+                <div class="sutra-category">
+                    <h4>般若部</h4>
+                    <div class="sutra-list">
+                        <a href="sutras/heart-sutra.html" class="sutra-card">
+                            <span class="sutra-name">般若波罗蜜多心经</span>
+                            <span class="sutra-desc">简称《心经》，阐述空性智慧</span>
+                        </a>
+                        <a href="sutras/diamond-sutra.html" class="sutra-card">
+                            <span class="sutra-name">金刚般若波罗蜜经</span>
+                            <span class="sutra-desc">简称《金刚经》，破相显性</span>
+                        </a>
+                        <a href="sutras/perfect-enlightenment-sutra.html" class="sutra-card">
+                            <span class="sutra-name">圆觉经</span>
+                            <span class="sutra-desc">大方广圆觉修多罗了义经</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 净土部 -->
+                <div class="sutra-category">
+                    <h4>净土部</h4>
+                    <div class="sutra-list">
+                        <a href="sutras/amitabha-sutra.html" class="sutra-card">
+                            <span class="sutra-name">佛说阿弥陀经</span>
+                            <span class="sutra-desc">介绍西方极乐世界</span>
+                        </a>
+                        <a href="sutras/infinite-life-sutra.html" class="sutra-card">
+                            <span class="sutra-name">佛说无量寿经</span>
+                            <span class="sutra-desc">阿弥陀佛四十八大愿</span>
+                        </a>
+                        <a href="sutras/medicine-buddha-sutra.html" class="sutra-card">
+                            <span class="sutra-name">药师琉璃光如来本愿功德经</span>
+                            <span class="sutra-desc">药师佛十二大愿，消灾延寿</span>
+                        </a>
+                        <a href="sutras/contemplation-sutra.html" class="sutra-card">
+                            <span class="sutra-name">观无量寿经</span>
+                            <span class="sutra-desc">十六观法，往生净土</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 地藏部 -->
+                <div class="sutra-category">
+                    <h4>地藏部</h4>
+                    <div class="sutra-list">
+                        <a href="sutras/ksitigarbha-sutra.html" class="sutra-card">
+                            <span class="sutra-name">地藏菩萨本愿经</span>
+                            <span class="sutra-desc">地藏菩萨救度众生大愿</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 法华部 -->
+                <div class="sutra-category">
+                    <h4>法华部</h4>
+                    <div class="sutra-list">
+                        <a href="sutras/lotus-sutra.html" class="sutra-card">
+                            <span class="sutra-name">妙法莲华经</span>
+                            <span class="sutra-desc">简称《法华经》，会三归一</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 华严部 -->
+                <div class="sutra-category">
+                    <h4>华严部</h4>
+                    <div class="sutra-list">
+                        <a href="sutras/avatamsaka-sutra.html" class="sutra-card">
+                            <span class="sutra-name">大方广佛华严经</span>
+                            <span class="sutra-desc">简称《华严经》，法界缘起</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 禅宗部 -->
+                <div class="sutra-category">
+                    <h4>禅宗部</h4>
+                    <div class="sutra-list">
+                        <a href="sutras/platform-sutra.html" class="sutra-card">
+                            <span class="sutra-name">六祖坛经</span>
+                            <span class="sutra-desc">禅宗六祖慧能大师语录</span>
+                        </a>
+                        <a href="sutras/lankavatara-sutra.html" class="sutra-card">
+                            <span class="sutra-name">楞伽经</span>
+                            <span class="sutra-desc">禅宗印心经典，唯识如来藏</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 唯识部 -->
+                <div class="sutra-category">
+                    <h4>唯识部</h4>
+                    <div class="sutra-list">
+                        <a href="sutras/surangama-sutra.html" class="sutra-card">
+                            <span class="sutra-name">楞严经</span>
+                            <span class="sutra-desc">大佛顶首楞严经，破魔显真</span>
+                        </a>
+                        <a href="sutras/deep-samadhi-sutra.html" class="sutra-card">
+                            <span class="sutra-name">解深密经</span>
+                            <span class="sutra-desc">唯识宗根本经典，三性三无性</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 律部 -->
+                <div class="sutra-category">
+                    <h4>律部</h4>
+                    <div class="sutra-list">
+                        <a href="sutras/brahma-net-sutra.html" class="sutra-card">
+                            <span class="sutra-name">梵网经</span>
+                            <span class="sutra-desc">菩萨戒本，十重四十八轻戒</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 经集部 -->
+                <div class="sutra-category">
+                    <h4>经集部</h4>
+                    <div class="sutra-list">
+                        <a href="sutras/forty-two-chapters-sutra.html" class="sutra-card">
+                            <span class="sutra-name">四十二章经</span>
+                            <span class="sutra-desc">中国第一部汉译佛经</span>
+                        </a>
+                        <a href="sutras/eight-realizations-sutra.html" class="sutra-card">
+                            <span class="sutra-name">八大人觉经</span>
+                            <span class="sutra-desc">菩萨八种觉悟法门</span>
+                        </a>
+                        <a href="sutras/vimalakirti-sutra.html" class="sutra-card">
+                            <span class="sutra-name">维摩诘经</span>
+                            <span class="sutra-desc">在家菩萨不可思议解脱法门</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 特色功能 -->
+    <section class="features">
+        <div class="container">
+            <h3 class="section-title">✨ 网站特色</h3>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">📖</div>
+                    <h4>经典齐全</h4>
+                    <p>收录多部重要佛教经典，持续更新</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🔍</div>
+                    <h4>全文检索</h4>
+                    <p>支持关键词搜索，快速定位经文</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">📱</div>
+                    <h4>响应式设计</h4>
+                    <p>适配手机、平板、电脑各种设备</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🌐</div>
+                    <h4>全球访问</h4>
+                    <p>CDN加速，世界各地快速访问</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于 -->
+    <section class="about" id="about">
+        <div class="container">
+            <h3 class="section-title">🙏 关于本站</h3>
+            <div class="about-content">
+                <p>本站旨在为佛弟子和佛学研究者提供便捷的在线佛经阅读服务。所有经文内容均来自公开权威的佛教典籍。</p>
+                <p class="notice">免责声明：本站内容仅供学习研究使用，请勿用于商业用途。如有版权问题，请联系我们。</p>
+                <div class="merit">
+                    <p>愿以此功德，庄严佛净土</p>
+                    <p>上报四重恩，下济三途苦</p>
+                    <p>若有见闻者，悉发菩提心</p>
+                    <p>尽此一报身，同生极乐国</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 佛经宝库 | 弘扬正法，利益众生</p>
+            <p class="small">本站内容仅供学习研究，转载请注明出处</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
