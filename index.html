@@ -37,6 +37,23 @@
             display: block;
         }
 
+        /* 电脑端显示新视频，手机端显示旧视频 */
+        #desktopVideo {
+            display: block;
+        }
+        #mobileVideo {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            #desktopVideo {
+                display: none;
+            }
+            #mobileVideo {
+                display: block;
+            }
+        }
+
         /* 半透明遮罩 */
         .overlay {
             position: fixed;
@@ -197,7 +214,12 @@
 <body>
     <!-- 视频铺满全屏 -->
     <div class="video-bg">
-        <video autoplay muted loop playsinline id="splashVideo">
+        <!-- 电脑端视频（新视频） -->
+        <video autoplay muted loop playsinline id="desktopVideo">
+            <source src="videos/splash-desktop.mp4" type="video/mp4">
+        </video>
+        <!-- 手机端视频（原视频） -->
+        <video autoplay muted loop playsinline id="mobileVideo">
             <source src="videos/splash.mp4" type="video/mp4">
         </video>
     </div>
@@ -227,7 +249,10 @@
         });
 
         // 视频加载失败时显示纯色背景
-        document.getElementById('splashVideo').addEventListener('error', function() {
+        document.getElementById('desktopVideo').addEventListener('error', function() {
+            document.querySelector('.video-bg').style.background = 'linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f0f23 100%)';
+        });
+        document.getElementById('mobileVideo').addEventListener('error', function() {
             document.querySelector('.video-bg').style.background = 'linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f0f23 100%)';
         });
     </script>
