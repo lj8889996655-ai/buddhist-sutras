@@ -131,7 +131,68 @@
   </url>
   <url>
     <loc>https://buddhist-sutras.pages.dev/sutras/vimalakirti-sutra.html</loc>
-    <lastmod>2025-05-16</lastmod>
+    <lastmod>2025-05-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- 新增10部 -->
+  <url>
+    <loc>https://buddhist-sutras.pages.dev/sutras/infinite-meaning-sutra.html</loc>
+    <lastmod>2025-05-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://buddhist-sutras.pages.dev/sutras/parental-gratitude-sutra.html</loc>
+    <lastmod>2025-05-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://buddhist-sutras.pages.dev/sutras/ullambana-sutra.html</loc>
+    <lastmod>2025-05-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://buddhist-sutras.pages.dev/sutras/ten-good-deeds-sutra.html</loc>
+    <lastmod>2025-05-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://buddhist-sutras.pages.dev/sutras/renwang-sutra.html</loc>
+    <lastmod>2025-05-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://buddhist-sutras.pages.dev/sutras/zhancha-sutra.html</loc>
+    <lastmod>2025-05-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://buddhist-sutras.pages.dev/sutras/sukhavati-vyuha-sutra.html</loc>
+    <lastmod>2025-05-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://buddhist-sutras.pages.dev/sutras/guan-puxian-sutra.html</loc>
+    <lastmod>2025-05-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://buddhist-sutras.pages.dev/sutras/maitreya-descent-sutra.html</loc>
+    <lastmod>2025-05-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://buddhist-sutras.pages.dev/sutras/four-dharma-sutra.html</loc>
+    <lastmod>2025-05-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
