@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="gradientFormless" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#E8D5F0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D4B8E0;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="gradientForm" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#C8E6C9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#A5D6A7;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="gradientDesire" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFCCBC;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFAB91;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="gradientSixPaths" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFF3E0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFE0B2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="#FAFAFA"/>
+
+  <!-- Title -->
+  <text x="400" y="35" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#333">佛教宇宙观·三界二十八天结构图</text>
+
+  <!-- 无色界 Formless Realm (Top) -->
+  <rect x="250" y="55" width="300" height="85" rx="8" fill="url(#gradientFormless)" stroke="#9C27B0" stroke-width="2"/>
+  <text x="400" y="80" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#4A148C">无色界（4天）</text>
+  <text x="400" y="100" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="11" text-anchor="middle" fill="#6A1B9A">非想非非想处天 | 无所有处天 | 识无边处天 | 空无边处天</text>
+  <text x="400" y="120" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="10" text-anchor="middle" fill="#7B1FA2" font-style="italic">无物质身体，超越形相，唯存意识</text>
+  <text x="400" y="135" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="9" text-anchor="middle" fill="#8E24AA">修四空定可证此界</text>
+
+  <!-- Arrow down -->
+  <line x1="400" y1="140" x2="400" y2="150" stroke="#666" stroke-width="2"/>
+  <polygon points="396,150 404,150 400,156" fill="#666"/>
+
+  <!-- 色界 Form Realm (Middle) -->
+  <rect x="150" y="160" width="500" height="140" rx="8" fill="url(#gradientForm)" stroke="#4CAF50" stroke-width="2"/>
+  <text x="400" y="185" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#1B5E20">色界（18天）</text>
+  
+  <!-- 四禅天 subdivision -->
+  <rect x="165" y="195" width="110" height="95" rx="5" fill="#C8E6C9" stroke="#81C784" stroke-width="1"/>
+  <text x="220" y="215" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#2E7D32">四禅天</text>
+  <text x="220" y="235" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="9" text-anchor="middle" fill="#388E3C">9天</text>
+  <text x="220" y="255" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="8" text-anchor="middle" fill="#43A047">福生天/广果天</text>
+  <text x="220" y="270" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="8" text-anchor="middle" fill="#43A047">无烦天/无热天</text>
+  <text x="220" y="285" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="8" text-anchor="middle" fill="#43A047">善现天/善见天</text>
+
+  <rect x="285" y="195" width="110" height="95" rx="5" fill="#C8E6C9" stroke="#81C784" stroke-width="1"/>
+  <text x="340" y="215" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#2E7D32">三禅天</text>
+  <text x="340" y="235" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="9" text-anchor="middle" fill="#388E3C">3天</text>
+  <text x="340" y="260" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="9" text-anchor="middle" fill="#43A047">少净天/无量净天</text>
+  <text x="340" y="280" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="9" text-anchor="middle" fill="#43A047">遍净天</text>
+
+  <rect x="405" y="195" width="110" height="95" rx="5" fill="#C8E6C9" stroke="#81C784" stroke-width="1"/>
+  <text x="460" y="215" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#2E7D32">二禅天</text>
+  <text x="460" y="235" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="9" text-anchor="middle" fill="#388E3C">3天</text>
+  <text x="460" y="260" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="9" text-anchor="middle" fill="#43A047">少光天/无量光天</text>
+  <text x="460" y="280" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="9" text-anchor="middle" fill="#43A047">光音天</text>
+
+  <rect x="525" y="195" width="110" height="95" rx="5" fill="#C8E6C9" stroke="#81C784" stroke-width="1"/>
+  <text x="580" y="215" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#2E7D32">初禅天</text>
+  <text x="580" y="235" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="9" text-anchor="middle" fill="#388E3C">3天</text>
+  <text x="580" y="260" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="9" text-anchor="middle" fill="#43A047">梵众天/梵辅天</text>
+  <text x="580" y="280" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="9" text-anchor="middle" fill="#43A047">大梵天</text>
+
+  <text x="400" y="295" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="9" text-anchor="middle" fill="#2E7D32" font-style="italic">有物质身体，无男女之欲，依禅定深浅分层</text>
+
+  <!-- Arrow down -->
+  <line x1="400" y1="300" x2="400" y2="310" stroke="#666" stroke-width="2"/>
+  <polygon points="396,310 404,310 400,316" fill="#666"/>
+
+  <!-- 欲界 Desire Realm (Lower Middle) -->
+  <rect x="180" y="320" width="440" height="130" rx="8" fill="url(#gradientDesire)" stroke="#FF5722" stroke-width="2"/>
+  <text x="400" y="345" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#BF360C">欲界（6天）</text>
+  
+  <!-- 六欲天 subdivision -->
+  <rect x="195" y="355" width="65" height="85" rx="5" fill="#FFCCBC" stroke="#FFAB91" stroke-width="1"/>
+  <text x="227" y="375" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="10" font-weight="bold" text-anchor="middle" fill="#D84315">他化自在天</text>
+  <text x="227" y="395" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="8" text-anchor="middle" fill="#E64A19">六天最高</text>
+  <text x="227" y="410" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="8" text-anchor="middle" fill="#E64A19">寿1.6万岁</text>
+  <text x="227" y="425" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="8" text-anchor="middle" fill="#E64A19">魔罗居此</text>
+
+  <rect x="270" y="355" width="65" height="85" rx="5" fill="#FFCCBC" stroke="#FFAB91" stroke-width="1"/>
+  <text x="302" y="375" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="10" font-weight="bold" text-anchor="middle" fill="#D84315">化乐天</text>
+  <text x="302" y="395" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="8" text-anchor="middle" fill="#E64A19">变化五欲</text>
+  <text x="302" y="410" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="8" text-anchor="middle" fill="#E64A19">寿8000岁</text>
+  <text x="302" y="425" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="8" text-anchor="middle" fill="#E64A19">自在游戏</text>
+
+  <rect x="345" y="355" width="65" height="85" rx="5" fill="#FFCCBC" stroke="#FFAB91" stroke-width="1"/>
+  <text x="377" y="375" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="10" font-weight="bold" text-anchor="middle" fill="#D84315">兜率天</text>
+  <text x="377" y="395" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="8" text-anchor="middle" fill="#E64A19">弥勒菩萨</text>
+  <text x="377" y="410" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="8" text-anchor="middle" fill="#E64A19">居内院</text>
+  <text x="377" y="425" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="8" text-anchor="middle" fill="#E64A19">寿4000岁</text>
+
+  <rect x="420" y="355" width="65" height="85" rx="5" fill="#FFCCBC" stroke="#FFAB91" stroke-width="1"/>
+  <text x="452" y="375" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="10" font-weight="bold" text-anchor="middle" fill="#D84315">夜摩天</text>
+  <text x="452" y="395" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="8" text-anchor="middle" fill="#E64A19">日月不及</text>
+  <text x="452" y="410" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="8" text-anchor="middle" fill="#E64A19">天自发光</text>
+  <text x="452" y="425" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="8" text-anchor="middle" fill="#E64A19">寿2000岁</text>
+
+  <rect x="495" y="355" width="55" height="85" rx="5" fill="#FFCCBC" stroke="#FFAB91" stroke-width="1"/>
+  <text x="522" y="375" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="10" font-weight="bold" text-anchor="middle" fill="#D84315">忉利天</text>
+  <text x="522" y="392" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="8" text-anchor="middle" fill="#E64A19">三十三天</text>
+  <text x="522" y="407" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="8" text-anchor="middle" fill="#E64A19">帝释天主</text>
+  <text x="522" y="422" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="8" text-anchor="middle" fill="#E64A19">寿1000岁</text>
+
+  <rect x="560" y="355" width="50" height="85" rx="5" fill="#FFCCBC" stroke="#FFAB91" stroke-width="1"/>
+  <text x="585" y="375" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="10" font-weight="bold" text-anchor="middle" fill="#D84315">四天王天</text>
+  <text x="585" y="392" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="8" text-anchor="middle" fill="#E64A19">须弥山腰</text>
+  <text x="585" y="407" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="8" text-anchor="middle" fill="#E64A19">护世四王</text>
+  <text x="585" y="422" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="8" text-anchor="middle" fill="#E64A19">寿500岁</text>
+
+  <text x="400" y="445" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="9" text-anchor="middle" fill="#BF360C" font-style="italic">有情欲、色欲、食欲、淫欲，六道众生轮回之所</text>
+
+  <!-- Arrow down -->
+  <line x1="400" y1="450" x2="400" y2="460" stroke="#666" stroke-width="2"/>
+  <polygon points="396,460 404,460 400,466" fill="#666"/>
+
+  <!-- 六道 Six Paths (Bottom) -->
+  <rect x="50" y="470" width="700" height="110" rx="8" fill="url(#gradientSixPaths)" stroke="#FF9800" stroke-width="2"/>
+  <text x="400" y="495" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#E65100">六道（轮回之所）</text>
+  
+  <!-- 六道 subdivision -->
+  <rect x="65" y="505" width="100" height="65" rx="5" fill="#FFECB3" stroke="#FFD54F" stroke-width="1"/>
+  <text x="115" y="525" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#F57F17">天道</text>
+  <text x="115" y="545" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="9" text-anchor="middle" fill="#F9A825">享天福，寿长</text>
+  <text x="115" y="560" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="8" text-anchor="middle" fill="#FBC02D">福尽仍堕</text>
+
+  <rect x="175" y="505" width="100" height="65" rx="5" fill="#FFECB3" stroke="#FFD54F" stroke-width="1"/>
+  <text x="225" y="525" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#F57F17">阿修罗道</text>
+  <text x="225" y="545" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="9" text-anchor="middle" fill="#F9A825">有神通，多嗔</text>
+  <text x="225" y="560" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="8" text-anchor="middle" fill="#FBC02D">常与天道战</text>
+
+  <rect x="285" y="505" width="100" height="65" rx="5" fill="#FFECB3" stroke="#FFD54F" stroke-width="1"/>
+  <text x="335" y="525" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#F57F17">人道</text>
+  <text x="335" y="545" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="9" text-anchor="middle" fill="#F9A825">苦乐参半</text>
+  <text x="335" y="560" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="8" text-anchor="middle" fill="#FBC02D">最易修行</text>
+
+  <rect x="395" y="505" width="100" height="65" rx="5" fill="#FFECB3" stroke="#FFD54F" stroke-width="1"/>
+  <text x="445" y="525" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#F57F17">畜生道</text>
+  <text x="445" y="545" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="9" text-anchor="middle" fill="#F9A825">愚痴蒙昧</text>
+  <text x="445" y="560" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="8" text-anchor="middle" fill="#FBC02D">多遭杀戮</text>
+
+  <rect x="505" y="505" width="100" height="65" rx="5" fill="#FFECB3" stroke="#FFD54F" stroke-width="1"/>
+  <text x="555" y="525" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#F57F17">饿鬼道</text>
+  <text x="555" y="545" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="9" text-anchor="middle" fill="#F9A825">饥渴难耐</text>
+  <text x="555" y="560" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="8" text-anchor="middle" fill="#FBC02D">腹大咽小</text>
+
+  <rect x="615" y="505" width="120" height="65" rx="5" fill="#FFECB3" stroke="#FFD54F" stroke-width="1"/>
+  <text x="675" y="525" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#F57F17">地狱道</text>
+  <text x="675" y="545" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="9" text-anchor="middle" fill="#F9A825">极苦无闲，八寒八热</text>
+  <text x="675" y="560" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="8" text-anchor="middle" fill="#FBC02D">八大地狱等</text>
+
+  <!-- Legend -->
+  <rect x="50" y="55" width="180" height="90" rx="5" fill="#FFF" stroke="#DDD" stroke-width="1"/>
+  <text x="140" y="75" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#333">图例说明</text>
+  <rect x="60" y="85" width="15" height="12" fill="#E8D5F0" stroke="#9C27B0"/>
+  <text x="80" y="95" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="9" text-anchor="start" fill="#666">无色界：无物质</text>
+  <rect x="60" y="102" width="15" height="12" fill="#C8E6C9" stroke="#4CAF50"/>
+  <text x="80" y="112" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="9" text-anchor="start" fill="#666">色界：有身无欲</text>
+  <rect x="60" y="119" width="15" height="12" fill="#FFCCBC" stroke="#FF5722"/>
+  <text x="80" y="129" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="9" text-anchor="start" fill="#666">欲界：有欲有身</text>
+</svg>

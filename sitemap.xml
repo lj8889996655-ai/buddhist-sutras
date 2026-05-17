@@ -196,4 +196,17 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <!-- 佛教科普栏目 -->
+  <url>
+    <loc>https://buddhist-sutras.pages.dev/knowledge/index.html</loc>
+    <lastmod>2025-05-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://buddhist-sutras.pages.dev/knowledge/three-realms.html</loc>
+    <lastmod>2025-05-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
