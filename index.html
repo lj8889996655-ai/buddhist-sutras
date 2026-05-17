@@ -198,6 +198,83 @@
                 font-size: 0.95rem;
             }
         }
+
+        /* 背景音乐播放器 */
+        .music-player {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(26, 26, 46, 0.8);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            padding: 10px 16px;
+            border-radius: 30px;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .music-player:hover {
+            background: rgba(26, 26, 46, 0.95);
+            border-color: rgba(212, 175, 55, 0.6);
+        }
+        .music-btn {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: rgba(212, 175, 55, 0.2);
+            border: 1px solid rgba(212, 175, 55, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #d4af37;
+            font-size: 14px;
+            flex-shrink: 0;
+        }
+        .music-btn.playing {
+            animation: pulse 1.5s infinite;
+        }
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.4); }
+            70% { box-shadow: 0 0 0 8px rgba(212, 175, 55, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0); }
+        }
+        .music-info {
+            color: rgba(245, 245, 245, 0.9);
+            font-size: 0.8rem;
+            white-space: nowrap;
+        }
+        .music-info .title {
+            font-size: 0.85rem;
+            color: #d4af37;
+        }
+        /* 音符动画 */
+        .music-notes {
+            display: none;
+            gap: 3px;
+            align-items: flex-end;
+            height: 16px;
+        }
+        .music-notes.active {
+            display: flex;
+        }
+        .music-notes span {
+            width: 3px;
+            background: #d4af37;
+            border-radius: 2px;
+            animation: note 0.8s ease-in-out infinite;
+        }
+        .music-notes span:nth-child(1) { height: 6px; animation-delay: 0s; }
+        .music-notes span:nth-child(2) { height: 12px; animation-delay: 0.2s; }
+        .music-notes span:nth-child(3) { height: 8px; animation-delay: 0.4s; }
+        .music-notes span:nth-child(4) { height: 14px; animation-delay: 0.1s; }
+        @keyframes note {
+            0%, 100% { transform: scaleY(1); }
+            50% { transform: scaleY(0.4); }
+        }
     </style>
 
     <!-- SEO Meta Tags -->
@@ -239,6 +316,22 @@
         <p class="mantra">南无本师释迦牟尼佛</p>
     </div>
 
+    <!-- 背景音乐 -->
+    <audio id="bgMusic" loop preload="auto">
+        <source src="audio/great-compassion-mantra.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- 音乐播放器 -->
+    <div class="music-player" id="musicPlayer" onclick="toggleMusic()">
+        <div class="music-btn" id="musicBtn">♪</div>
+        <div class="music-info">
+            <div class="title">大悲心陀罗尼</div>
+        </div>
+        <div class="music-notes" id="musicNotes">
+            <span></span><span></span><span></span><span></span>
+        </div>
+    </div>
+
     <script>
         // 点击视频或遮罩跳转
         document.querySelector('.video-bg').addEventListener('click', function() {
@@ -255,6 +348,44 @@
         document.getElementById('mobileVideo').addEventListener('error', function() {
             document.querySelector('.video-bg').style.background = 'linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f0f23 100%)';
         });
+
+        // 背景音乐控制
+        var bgMusic = document.getElementById('bgMusic');
+        var musicBtn = document.getElementById('musicBtn');
+        var musicNotes = document.getElementById('musicNotes');
+        var isPlaying = false;
+
+        // 尝试自动播放（需要用户交互后才能播放）
+        document.addEventListener('click', function initMusic() {
+            if (!isPlaying) {
+                bgMusic.volume = 0.3;
+                bgMusic.play().then(function() {
+                    isPlaying = true;
+                    musicBtn.classList.add('playing');
+                    musicNotes.classList.add('active');
+                    musicBtn.textContent = '♫';
+                }).catch(function() {});
+            }
+            document.removeEventListener('click', initMusic);
+        }, { once: true });
+
+        function toggleMusic() {
+            if (isPlaying) {
+                bgMusic.pause();
+                isPlaying = false;
+                musicBtn.classList.remove('playing');
+                musicNotes.classList.remove('active');
+                musicBtn.textContent = '♪';
+            } else {
+                bgMusic.volume = 0.3;
+                bgMusic.play().then(function() {
+                    isPlaying = true;
+                    musicBtn.classList.add('playing');
+                    musicNotes.classList.add('active');
+                    musicBtn.textContent = '♫';
+                }).catch(function() {});
+            }
+        }
     </script>
 </body>
 </html>
