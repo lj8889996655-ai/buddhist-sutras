@@ -316,33 +316,14 @@
         <p class="mantra">南无本师释迦牟尼佛</p>
     </div>
 
-    <!-- 背景音乐 -->
-    <audio id="bgMusic" loop preload="auto">
-        <source src="audio/great-compassion-mantra.mp3" type="audio/mpeg">
-    </audio>
-
     <script>
-        // 背景音乐自动播放
-        var bgMusic = document.getElementById('bgMusic');
-        bgMusic.volume = 0.3;
-
-        // 页面加载后立即尝试播放
-        function tryPlay() {
-            bgMusic.play().catch(function() {});
-        }
-        tryPlay();
-
-        // 点击视频或遮罩跳转（先播放音乐，延迟跳转）
-        function goToHome() {
-            bgMusic.volume = 0.3;
-            bgMusic.play().catch(function() {});
-            setTimeout(function() {
-                window.location.href = 'home.html';
-            }, 500);
-        }
-        document.querySelector('.video-bg').addEventListener('click', goToHome);
-        document.querySelector('.overlay').addEventListener('click', goToHome);
-        document.querySelector('.enter-btn').addEventListener('click', goToHome);
+        // 点击视频或遮罩跳转
+        document.querySelector('.video-bg').addEventListener('click', function() {
+            window.location.href = 'home.html';
+        });
+        document.querySelector('.overlay').addEventListener('click', function() {
+            window.location.href = 'home.html';
+        });
 
         // 视频加载失败时显示纯色背景
         document.getElementById('desktopVideo').addEventListener('error', function() {
