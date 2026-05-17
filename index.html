@@ -322,13 +322,27 @@
     </audio>
 
     <script>
-        // 点击视频或遮罩跳转
-        document.querySelector('.video-bg').addEventListener('click', function() {
-            window.location.href = 'home.html';
-        });
-        document.querySelector('.overlay').addEventListener('click', function() {
-            window.location.href = 'home.html';
-        });
+        // 背景音乐自动播放
+        var bgMusic = document.getElementById('bgMusic');
+        bgMusic.volume = 0.3;
+
+        // 页面加载后立即尝试播放
+        function tryPlay() {
+            bgMusic.play().catch(function() {});
+        }
+        tryPlay();
+
+        // 点击视频或遮罩跳转（先播放音乐，延迟跳转）
+        function goToHome() {
+            bgMusic.volume = 0.3;
+            bgMusic.play().catch(function() {});
+            setTimeout(function() {
+                window.location.href = 'home.html';
+            }, 500);
+        }
+        document.querySelector('.video-bg').addEventListener('click', goToHome);
+        document.querySelector('.overlay').addEventListener('click', goToHome);
+        document.querySelector('.enter-btn').addEventListener('click', goToHome);
 
         // 视频加载失败时显示纯色背景
         document.getElementById('desktopVideo').addEventListener('error', function() {
@@ -338,17 +352,6 @@
             document.querySelector('.video-bg').style.background = 'linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f0f23 100%)';
         });
 
-        // 背景音乐自动播放
-        var bgMusic = document.getElementById('bgMusic');
-        bgMusic.volume = 0.3;
-        bgMusic.play().catch(function() {
-            // 浏览器阻止自动播放时，监听用户首次交互后播放
-            document.addEventListener('click', function playOnInteract() {
-                bgMusic.volume = 0.3;
-                bgMusic.play().catch(function() {});
-                document.removeEventListener('click', playOnInteract);
-            }, { once: true });
-        });
     </script>
 </body>
 </html>
